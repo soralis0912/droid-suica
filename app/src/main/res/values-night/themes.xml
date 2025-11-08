@@ -1,0 +1,6 @@
+<resources>
+    <style name="Base.Theme.DroidSuica" parent="Theme.Material3.DayNight">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/ic_launcher_background</item>
+    </style>
+</resources>

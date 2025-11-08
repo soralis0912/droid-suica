@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Droid Suica</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <!-- Main screen -->
+    <string name="nfc_reading_status">カードをかざしてください</string>
+    <string name="nfc_not_available">NFCが利用できません</string>
+    <string name="nfc_reading">カード読み取り中...</string>
+    <string name="card_read_error">カード読み取りエラー</string>
+    <string name="card_balance">残高</string>
+    <string name="card_type">カード種別</string>
+    <string name="last_transaction">最終利用</string>
+    
+    <!-- Card details -->
+    <string name="card_details">カード詳細</string>
+    <string name="tab_overview">概要</string>
+    <string name="tab_history">履歴</string>
+    <string name="tab_details">詳細</string>
+    
+    <!-- Settings -->
+    <string name="settings">設定</string>
+    <string name="auth_server_url">認証サーバーURL</string>
+    <string name="auth_token">認証トークン</string>
+    
+    <!-- Actions -->
+    <string name="save_json">JSON保存</string>
+    <string name="copy_to_clipboard">クリップボードにコピー</string>
+    <string name="read_another_card">別のカードを読み取る</string>
+</resources>
