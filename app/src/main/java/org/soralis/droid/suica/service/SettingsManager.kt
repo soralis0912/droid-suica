@@ -1,4 +1,4 @@
-package com.example.droidsuica.service
+package org.soralis.droid.suica.service
 
 import android.content.Context
 import android.content.SharedPreferences

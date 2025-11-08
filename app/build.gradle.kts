@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.droidsuica"
+    namespace = "org.soralis.droid.suica"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.droidsuica"
+        applicationId = "org.soralis.droid.suica"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

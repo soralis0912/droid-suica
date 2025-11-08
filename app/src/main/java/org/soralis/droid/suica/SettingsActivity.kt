@@ -1,10 +1,10 @@
-package com.example.droidsuica
+package org.soralis.droid.suica
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.droidsuica.databinding.ActivitySettingsBinding
-import com.example.droidsuica.service.SettingsManager
+import org.soralis.droid.suica.databinding.ActivitySettingsBinding
+import org.soralis.droid.suica.service.SettingsManager
 
 class SettingsActivity : AppCompatActivity() {
     

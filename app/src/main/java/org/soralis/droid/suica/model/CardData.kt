@@ -1,4 +1,4 @@
-package com.example.droidsuica.model
+package org.soralis.droid.suica.model
 
 data class CardData(
     val idm: String? = null,

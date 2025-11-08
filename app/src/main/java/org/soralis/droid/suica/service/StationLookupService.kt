@@ -1,7 +1,7 @@
-package com.example.droidsuica.service
+package org.soralis.droid.suica.service
 
 import android.content.Context
-import com.example.droidsuica.model.*
+import org.soralis.droid.suica.model.*
 import java.io.BufferedReader
 import java.io.InputStreamReader
 

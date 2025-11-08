@@ -1,9 +1,9 @@
-package com.example.droidsuica.service
+package org.soralis.droid.suica.service
 
 import android.content.Context
 import android.nfc.Tag
 import android.nfc.tech.NfcF
-import com.example.droidsuica.model.NFCCardData
+import org.soralis.droid.suica.model.NFCCardData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -1,4 +1,4 @@
-package com.example.droidsuica
+package org.soralis.droid.suica
 
 import android.app.PendingIntent
 import android.content.Intent
@@ -12,10 +12,10 @@ import android.text.method.ScrollingMovementMethod
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
-import com.example.droidsuica.databinding.ActivityMainBinding
-import com.example.droidsuica.model.CardData
-import com.example.droidsuica.service.NFCService
-import com.example.droidsuica.ui.MainViewModel
+import org.soralis.droid.suica.databinding.ActivityMainBinding
+import org.soralis.droid.suica.model.CardData
+import org.soralis.droid.suica.service.NFCService
+import org.soralis.droid.suica.ui.MainViewModel
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {

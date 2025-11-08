@@ -1,4 +1,4 @@
-package com.example.droidsuica.ui
+package org.soralis.droid.suica.ui
 
 import android.app.Application
 import android.nfc.Tag
@@ -6,8 +6,8 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.droidsuica.model.CardData
-import com.example.droidsuica.service.*
+import org.soralis.droid.suica.model.CardData
+import org.soralis.droid.suica.service.*
 import kotlinx.coroutines.launch
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
