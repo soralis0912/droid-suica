@@ -32,7 +32,7 @@ Droid SuicaはSuica等のFeliCaベースの交通系ICカードから情報を�
 ## プロジェクト構造
 
 ```
-app/src/main/java/com/example/droidsuica/
+app/src/main/java/org/soralis/droid/suica/
 ├── MainActivity.kt                  # メインアクティビティ
 ├── SettingsActivity.kt              # 設定画面アクティビティ
 ├── model/
