@@ -9,6 +9,7 @@ Droid SuicaはSuica等のFeliCaベースの交通系ICカードから情報を�
 - **カード情報表示**: 残高、利用履歴、カード詳細の表示
 - **駅名解決**: station_codes.csvに基づく会社名・路線名・駅名の解決
 - **データ保存**: カード情報をJSONファイルとして保存
+- **設定管理**: 認証サーバーURLなどの設定をアプリ内で変更可能
 
 ## 必要環境
 
@@ -20,8 +21,12 @@ Droid SuicaはSuica等のFeliCaベースの交通系ICカードから情報を�
 
 - **Kotlin**: プログラミング言語
 - **Android Jetpack**: UI・アーキテクチャコンポーネント
+  - ViewModel & LiveData
+  - Navigation Component
+  - Preference
 - **Material Design 3**: UIフレームワーク
-- **OkHttp**: HTTP通信
+- **OkHttp 4.12**: HTTP通信
+- **Kotlinx Serialization**: JSON解析
 - **Coroutines**: 非同期処理
 
 ## プロジェクト構造
@@ -29,6 +34,7 @@ Droid SuicaはSuica等のFeliCaベースの交通系ICカードから情報を�
 ```
 app/src/main/java/com/example/droidsuica/
 ├── MainActivity.kt                  # メインアクティビティ
+├── SettingsActivity.kt              # 設定画面アクティビティ
 ├── model/
 │   └── CardData.kt                 # カードデータモデル
 ├── service/
@@ -43,9 +49,33 @@ app/src/main/java/com/example/droidsuica/
 
 ## セットアップ
 
-1. Android Studioでプロジェクトを開く
-2. Gradleの同期を実行
-3. Android端末またはエミュレータでアプリを実行
+1. リポジトリをクローン
+   ```bash
+   git clone https://github.com/your-username/droid-suica.git
+   cd droid-suica
+   ```
+
+2. Android Studioでプロジェクトを開く
+
+3. Gradleの同期を実行
+
+4. Android端末（NFC搭載）でアプリをビルド・実行
+   - エミュレータではNFC機能が使えないため、実機が必要です
+
+## ビルド
+
+### デバッグビルド
+```bash
+./gradlew assembleDebug
+```
+
+### リリースビルド
+```bash
+export STORE_PASSWORD=your_keystore_password
+export KEY_ALIAS=your_key_alias
+export KEY_PASSWORD=your_key_password
+./gradlew assembleRelease
+```
 
 ## 設定
 
@@ -57,17 +87,11 @@ app/src/main/java/com/example/droidsuica/
 - 認証サーバーには個人情報やカード識別子などの機密データが送信される可能性があります
 - 信頼できる環境でのみ接続してください
 
-## 参考プロジェクト
-
-このプロジェクトは以下のプロジェクトを参考にして作成されています：
-
-- [suica-viewer](../suica-viewer/) - Python版Suica Viewer
-- [suica-viewer-android](../suica-viewer-android/) - Flutter版Suica Viewer  
-- [aa](../aa/) - WebView版Suica Viewer
-
 ## ライセンス
 
-MIT License
+MIT License - 詳細は[LICENSE](LICENSE)を参照してください。
+
+Copyright (c) 2025 droid-suica contributors
 
 ## 注意
 
